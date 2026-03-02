@@ -3,19 +3,23 @@
 import { useControls } from "leva";
 import { useEffect } from "react";
 import Header from "./components/Header/Header";
+import GuestInvite from "./components/GuestInvite/GuestInvite";
+import Location from "./components/Location/Location";
 
 export default function Home() {
-	const { bgColor } = useControls({
-		bgColor: "#a8a385",
-	});
+	// const { fgColor } = useControls({
+	// 	fgColor: "#a8a385",
+	// });
 
-	useEffect(() => {
-		document.documentElement.style.setProperty("--background", bgColor);
-	}, [bgColor]);
+	// useEffect(() => {
+	// 	document.documentElement.style.setProperty("--foreground", fgColor);
+	// }, [fgColor]);
 
 	return (
-		<div className="flex min-h-screen justify-center ">
+		<div className="flex flex-col justify-center">
 			<Header />
+			<GuestInvite />
+			<Location />
 		</div>
 	);
 }

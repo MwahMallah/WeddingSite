@@ -15,17 +15,32 @@ function Header() {
 	});
 
 	return (
-		<div className="flex flex-col items-center">
+		<div className="flex flex-col items-center bg-foreground">
 			<div
 				ref={imageCoverRef}
 				className="opacity-0 border-solid border-5 rounded-b-full border-zinc-100 overflow-hidden"
 			>
-				<Image
-					src={"/images/Header.JPG"}
-					width={853}
-					height={907}
-					alt={"Красивое фото"}
-				/>
+				{/* Mobile */}
+				<div className="block md:hidden">
+					<Image
+						src="/images/Header_moblie.JPG"
+						width={853}
+						height={1280}
+						alt="Красивое фото"
+						priority
+					/>
+				</div>
+
+				{/* Desktop */}
+				<div className="hidden md:block">
+					<Image
+						src="/images/Header.JPG"
+						width={853}
+						height={907}
+						alt="Красивое фото"
+						priority
+					/>
+				</div>
 			</div>
 			<PlayRingButton />
 		</div>

@@ -5,11 +5,14 @@ import { Pause, Play } from "lucide-react";
 import gsap from "gsap";
 import { useRef } from "react";
 import useAudio from "./useAudio";
+import useIsMobile from "@/app/hooks/useIsMobile";
 
 function PlayRingButton() {
 	const ringRef = useRef<HTMLDivElement>(null);
 	const text = "включити пісню • включити пісню •";
-	const radius = 75;
+	const isMobile = useIsMobile();
+	const radius = isMobile ? 68 : 75;
+	const textSize = isMobile ? 13 : 15;
 	const characters = text.split("");
 
 	const { isPlaying, toggle } = useAudio({
@@ -34,8 +37,9 @@ function PlayRingButton() {
 					return (
 						<span
 							key={i}
-							className="absolute left-1/2 top-1/2 tracking-widest ring-char text-white text-[15px]"
+							className={`absolute left-1/2 top-1/2 tracking-widest ring-char text-white`}
 							style={{
+								fontSize: `${textSize}px`,
 								transform: `
                   rotate(${angle}deg)
                   translate(${radius}px)
