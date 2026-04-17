@@ -5,6 +5,9 @@ import { useEffect } from "react";
 import Header from "./components/Header/Header";
 import GuestInvite from "./components/GuestInvite/GuestInvite";
 import Location from "./components/Location/Location";
+import DayProgram from "./components/DayProgram/DayProgram";
+import DressCode from "./components/DressCode/DressCode";
+import Wishes from "./components/Wishes/Wishes";
 
 export default function Home() {
 	// const { fgColor } = useControls({
@@ -20,6 +23,9 @@ export default function Home() {
 			<Header />
 			<GuestInvite />
 			<Location />
+			<DayProgram />
+			<DressCode />
+			<Wishes />
 		</div>
 	);
 }

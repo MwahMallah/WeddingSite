@@ -31,7 +31,7 @@ function Location() {
 	return (
 		<div
 			ref={containerRef}
-			className="mt-40 flex flex-col items-center text-center"
+			className="mt-40 flex flex-col items-center text-center mx-5"
 		>
 			<h1 className="location-heading text-5xl pb-5 text-foreground">
 				Локація Святкування
