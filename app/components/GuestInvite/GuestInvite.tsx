@@ -14,9 +14,9 @@ function GuestInvite() {
 	const fullText = "Дорогі Гості!";
 	const [typed, setTyped] = useState("");
 
-	const month = "жовтень";
-	const weekday = "п'ятниця";
-	const day = "25";
+	const month = "серпень";
+	const weekday = "четвер";
+	const day = "6";
 	const year = "2026";
 
 	useGSAP(

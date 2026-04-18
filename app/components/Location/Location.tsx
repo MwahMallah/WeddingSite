@@ -44,7 +44,7 @@ function Location() {
 					height={1596}
 				/>
 			</div>
-			<p className="mt-2">Место Crystal Hall</p>
+			<p className="mt-2">Місце Crystal Hall</p>
 			<div className="mt-6">
 				<Link
 					href="https://maps.app.goo.gl/a5sGJcRYPNFdBA1p9?g_st=it"

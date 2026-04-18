@@ -25,7 +25,7 @@ function SubmitButton() {
 
 gsap.registerPlugin(ScrollTrigger);
 
-const drinkOptions = ["Горілка", "Коньяк", "Шампанське", "Вино"];
+const drinkOptions = ["Горілка", "Віскі", "Ром", "Шампанське", "Вино"];
 
 export default function RSVP() {
     const containerRef = useRef<HTMLDivElement>(null);
