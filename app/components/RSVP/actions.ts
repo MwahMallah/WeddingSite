@@ -26,11 +26,17 @@ export async function submitRSVP(formData: FormData): Promise<void> {
         drinks: formData.getAll("drinks") as string[],
     };
 
-    console.log("[RSVP stub] received:", data);
+    const scriptUrl = process.env.GOOGLE_SCRIPT_URL; // Put your Web App URL in .env.local
 
-    // TODO: replace with real implementation
-    // Option A: await submitViaGoogleScript(data);
-    // Option B: await submitViaGoogleSheetsAPI(data);
-
-    // TODO: return success/error state via useActionState() when wiring up real logic
+    try {
+        await fetch(scriptUrl!, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+            mode: 'no-cors' // Important for Google Script redirects
+        });
+        console.log("RSVP Submitted to Sheets");
+    } catch (err) {
+        console.error("Failed to submit RSVP", err);
+    }
 }

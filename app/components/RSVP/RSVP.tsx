@@ -1,10 +1,27 @@
 "use client";
 
 import { useRef } from "react";
+import { useFormStatus } from "react-dom";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { submitRSVP } from "./actions";
+
+function SubmitButton() {
+    const { pending } = useFormStatus();
+    return (
+        <button
+            type="submit"
+            disabled={pending}
+            className="flex items-center gap-3 bg-foreground text-background font-bold tracking-widest text-sm rounded-full px-10 py-4 transition cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed hover:not-disabled:opacity-80"
+        >
+            {pending && (
+                <span className="w-4 h-4 rounded-full border-2 border-background/30 border-t-background animate-spin" />
+            )}
+            {pending ? "ВІДПРАВЛЯЄМО..." : "ВІДПРАВИТИ"}
+        </button>
+    );
+}
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -75,12 +92,7 @@ export default function RSVP() {
 
                 {/* Submit */}
                 <div className="rsvp-field flex justify-end">
-                    <button
-                        type="submit"
-                        className="bg-foreground text-background font-bold tracking-widest text-sm rounded-full px-10 py-4 hover:opacity-80 transition cursor-pointer"
-                    >
-                        ВІДПРАВИТИ
-                    </button>
+                    <SubmitButton />
                 </div>
             </form>
         </div>
