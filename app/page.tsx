@@ -8,6 +8,8 @@ import Location from "./components/Location/Location";
 import DayProgram from "./components/DayProgram/DayProgram";
 import DressCode from "./components/DressCode/DressCode";
 import Wishes from "./components/Wishes/Wishes";
+import RSVP from "./components/RSVP/RSVP";
+import Countdown from "./components/Countdown/Countdown";
 
 export default function Home() {
 	// const { fgColor } = useControls({
@@ -26,6 +28,8 @@ export default function Home() {
 			<DayProgram />
 			<DressCode />
 			<Wishes />
+			<RSVP />
+			<Countdown />
 		</div>
 	);
 }

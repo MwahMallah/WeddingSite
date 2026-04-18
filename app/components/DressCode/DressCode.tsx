@@ -36,9 +36,9 @@ export default function DressCode() {
     }, { scope: containerRef });
 
     return (
-        <div ref={containerRef} className="flex text-foreground flex-col items-center text-center px-8 py-10">
-            <h2 className="text-3xl font-bold tracking-wide mb-4">ДРЕС-КОД</h2>
-            <p className="text-2xl max-w-md mb-10">
+        <div ref={containerRef} className="flex text-text flex-col items-center text-center px-8 py-10">
+            <h2 className="text-4xl font-bold tracking-wide mb-4">ДРЕС-КОД</h2>
+            <p className="text-xl max-w-md mb-10">
                 Ми будемо дуже вдячні, якщо ви підтримаєте атмосферу свята та оберете наряди у таких кольорах:
             </p>
             <div className="flex flex-row items-center ml-[-1.5rem]">

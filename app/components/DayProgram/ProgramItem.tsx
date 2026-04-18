@@ -15,7 +15,7 @@ export default function ProgramItem({imageSrc, time, desc, cn}: ProgramItemProps
             height={81}
             alt={"Торт"} />
 
-        <p className="text-5xl bold">{time}</p>
+        <p className="text-5xl font-bold">{time}</p>
         <p className="text-2xl">{desc}</p>
     </div>
 }

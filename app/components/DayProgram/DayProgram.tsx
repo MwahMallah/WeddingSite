@@ -25,7 +25,7 @@ export default function DayProgram() {
     }, []);
 
     return <div ref={containerRef} className="bg-foreground my-10 text-background mx-5 border-foreground rounded-t-[9999px] rounded-b-[9999px] p-10 flex flex-col align-center justify-center">
-        <h2 className="text-3xl my-8 self-center pi-title">ПРОГРАМА ДНЯ</h2>
+        <h2 className="text-4xl font-bold my-8 self-center pi-title">ПРОГРАМА ДНЯ</h2>
         <div className="flex flex-col gap-6">
             <ProgramItem imageSrc="/images/Glasses.png" time="15:30" desc="Збір гостей" cn="pi-1"/>
             <ProgramItem imageSrc="/images/Plates.png" time="16:00" desc="Святковий банкет" cn="pi-2"/>
