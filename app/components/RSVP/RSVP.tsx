@@ -54,7 +54,7 @@ export default function RSVP() {
             <p className="rsvp-desc text-xl max-w-sm mb-2">
                 Будь ласка, відправте відповідь про вашу присутність на весіллі
             </p>
-            <p className="rsvp-desc text-xl font-bold mb-10">до 1.06.2026</p>
+            <p className="rsvp-desc text-xl font-bold mb-10">до 15.07.2026</p>
 
             <form action={submitRSVP} className="w-full max-w-sm flex flex-col gap-8 text-left">
                 {/* Name */}
