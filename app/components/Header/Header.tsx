@@ -23,7 +23,7 @@ function Header() {
 				{/* Mobile */}
 				<div className="block md:hidden">
 					<Image
-						src="/images/Header_moblie.JPG"
+						src="/images/Header_20260620.JPG"
 						width={853}
 						height={1280}
 						alt="Красивое фото"

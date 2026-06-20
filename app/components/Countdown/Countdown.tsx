@@ -96,7 +96,7 @@ export default function Countdown() {
                 {/* Bottom — wedding photo */}
                 <div className="countdown-image relative w-full aspect-[3/4]">
                     <Image
-                        src="/images/WeddingBottom.jpeg"
+                        src="/images/Footer_20260620.JPG"
                         alt="До зустрічі"
                         fill
                         className="object-cover object-top rounded-t-[9999px]"

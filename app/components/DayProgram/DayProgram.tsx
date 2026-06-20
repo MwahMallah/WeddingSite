@@ -21,6 +21,7 @@ export default function DayProgram() {
         tl.from(".pi-1", { opacity: 0, y: 20 })
             .from(".pi-2", { opacity: 0, y: 20 }, ">0.05")
             .from(".pi-3", { opacity: 0, y: 20 }, ">0.05")
+            .from(".pi-4", { opacity: 0, y: 20 }, ">0.05")
             .from(".pi-title", { opacity: 0 }, 0.5);
     }, []);
 
@@ -28,8 +29,9 @@ export default function DayProgram() {
         <h2 className="text-4xl font-bold my-8 self-center pi-title">ПРОГРАМА ДНЯ</h2>
         <div className="flex flex-col gap-6">
             <ProgramItem imageSrc="/images/Glasses.png" time="15:30" desc="Збір гостей" cn="pi-1"/>
-            <ProgramItem imageSrc="/images/Plates.png" time="16:00" desc="Святковий банкет" cn="pi-2"/>
-            <ProgramItem imageSrc="/images/Cake.png" time="22:00" desc="Завершення вечора" cn="pi-3"/>
+            <ProgramItem imageSrc="/images/Plates.png" time="17:30" desc="Весільний торт" cn="pi-2"/>
+            <ProgramItem imageSrc="/images/Cake.png" time="22:00" desc="Весільний торт" cn="pi-3"/>
+            <ProgramItem imageSrc="/images/Cake.png" time="23:30" desc="Завершення вечора" cn="pi-4"/>
         </div>
     </div>
 }

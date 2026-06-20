@@ -26,7 +26,7 @@ export async function submitRSVP(formData: FormData): Promise<void> {
         drinks: formData.getAll("drinks") as string[],
     };
 
-    const scriptUrl = process.env.GOOGLE_SCRIPT_URL; // Put your Web App URL in .env.local
+    const scriptUrl = process.env.GOOGLE_SCRIPT_URL; 
 
     try {
         await fetch(scriptUrl!, {
