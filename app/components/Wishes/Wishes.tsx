@@ -33,7 +33,7 @@ export default function Wishes() {
         >
             <h2 className="wishes-title font-playfair font-bold text-4xl my-6">Замість квітів</h2>
             <p className="wishes-desc font-cormorant text-xl max-w-sm leading-relaxed mb-8">
-                Ми щиро просимо вас не дарувати нам квіти. Квіти прекрасні, але, на жаль, швидко в’януть. Тому замість букета ми будемо раді внеску в бюджет нашої молодої сім’ї — він тішитиме нас значно довше
+                Квіти, безумовно, прекрасні, але їхня краса триває лише кілька днів. Тому замість букета ми будемо раді внеску до нашої весільної скарбнички — на нові країни, незабутні пригоди та спогади, які залишаться з нами назавжди.
             </p>
             <h2 className="wishes-title font-playfair font-bold text-4xl my-6">Подарунок для молодят</h2>
             <p className="wishes-desc font-cormorant text-xl max-w-sm leading-relaxed mb-8">

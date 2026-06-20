@@ -31,7 +31,7 @@ export default function DayProgram() {
             <ProgramItem imageSrc="/images/Glasses.png" time="15:30" desc="Збір гостей" cn="pi-1"/>
             <ProgramItem imageSrc="/images/Plates.png" time="17:30" desc="Весільний торт" cn="pi-2"/>
             <ProgramItem imageSrc="/images/Cake.png" time="22:00" desc="Весільний торт" cn="pi-3"/>
-            <ProgramItem imageSrc="/images/Cake.png" time="00:00" desc="Завершення вечора" cn="pi-4"/>
+            <ProgramItem imageSrc="/images/Salute.png" time="00:00" desc="Завершення вечора" cn="pi-4"/>
         </div>
     </div>
 }
