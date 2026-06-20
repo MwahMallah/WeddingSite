@@ -34,7 +34,7 @@ function Header() {
 				{/* Desktop */}
 				<div className="hidden md:block">
 					<Image
-						src="/images/Header.JPG"
+						src="/images/Header_20260620.JPG"
 						width={853}
 						height={907}
 						alt="Красивое фото"
