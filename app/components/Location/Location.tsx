@@ -47,7 +47,7 @@ function Location() {
 			<p className="mt-2">Місце Crystal Hall</p>
 			<div className="mt-6">
 				<Link
-					href="https://maps.app.goo.gl/a5sGJcRYPNFdBA1p9?g_st=it"
+					href="https://maps.app.goo.gl/feAWZgTRmiR2cuvS8?g_st=ic"
 					target="_blank"
 					className="inline-block rounded-4xl bg-foreground text-background px-6 py-3 hover:opacity-80 transition"
 				>

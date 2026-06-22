@@ -39,10 +39,6 @@ export default function Wishes() {
             <p className="wishes-desc font-cormorant text-xl max-w-sm leading-relaxed mb-8">
                 Ваша присутність на нашому святі — вже великий подарунок для нас. Якщо ж ви захочете привітати нас додатково, ми будемо дуже вдячні за грошовий внесок у бюджет нашої молодої сім’ї.
             </p>
-            <h2 className="wishes-title font-playfair font-bold text-4xl my-6">Фото та відео зі свята</h2>
-            <p className="wishes-desc font-cormorant text-xl max-w-sm leading-relaxed mb-8">
-                Ми будемо раді побачити наше весілля вашими очима. Будь ласка, діліться фотографіями та відео зі свята у розділі «Завантажити фото» на цьому сайті. Для нас це будуть особливі спогади, до яких ми із задоволенням повертатимемося ще багато років.
-            </p>
         </div>
     );
 }
